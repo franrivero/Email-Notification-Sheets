@@ -10,7 +10,7 @@ function sendNotification() {
   var sheets = ss.getSheets();
   
   // Itera a través de las hojas para encontrar la hoja 'Test-certificates'
-  var targetSheetName = 'Certificates';
+  var targetSheetName = 'Test-certificates';
   var targetSheet = null;
   
   for (var i = 0; i < sheets.length; i++) {
@@ -50,8 +50,8 @@ function sendNotification() {
     var message = "<br><b>Notificación de recordatorio:</b><br>";
     message += "<br>Esto es un recordatorio sobre los certificados existentes. Si recibiste este mensaje, es necesario tomar acción para evitar que se expiren.<br>";
     message += "<br><b>Stack afectado:</b> " + url + " ";
-    message += "<br><b>Fecha de expiración en e3: </b> " + expirationDate1 + " ";
-    message += "<br><b>Fecha de expiración en Prod: </b> " + expirationDate2 + " ";
+    message += "<br><b>Fecha de expiración en: </b> " + expirationDate1 + " ";
+    message += "<br><b>Fecha de expiración en: </b> " + expirationDate2 + " ";
     message += "<br><b>Correspondiente al certificado de: </b> " + additionalInfo1 + " ";
     message += "<br><b>Correspondiente a la vertical de: </b> " + additionalInfo2 + "";
     message += "<br> ";
